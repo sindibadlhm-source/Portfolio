@@ -226,3 +226,34 @@ footer p {
     color: white;
     text-shadow: 0 0 10px #00d4ff;
 }
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #00d4ff;
+    font-weight: 600;
+    transition: 0.4s;
+    cursor: default;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-card:hover {
+    background: rgba(0, 212, 255, 0.1);
+    border-color: #00d4ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+}
