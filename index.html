@@ -60,11 +60,16 @@
     <section id="contact" class="contact reveal">
         <h2 class="section-title">Get In Touch</h2>
         <div class="glass-card form-container">
-            <form action="#" method="POST">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+            <form action="https://formspree.io/f/mjgjvyeq" method="POST">
+                
+                <input type="text" name="name" placeholder="Your Name" required>
+                
+                <input type="email" name="email" placeholder="Your Email" required>
+                
+                <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+                
                 <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
+                
             </form>
         </div>
     </section>
@@ -80,16 +85,13 @@
                 var windowHeight = window.innerHeight;
                 var revealTop = reveals[i].getBoundingClientRect().top;
                 
-                // Triggers when the element is 100px visible
                 if (revealTop < windowHeight - 100) {
                     reveals[i].classList.add('active');
                 }
             }
         }
-        // Listen for scrolling
         window.addEventListener('scroll', reveal);
-        // Run once immediately so the top of the page loads
-        reveal();
+        reveal(); // Run immediately on load
     </script>
 </body>
 </html>
