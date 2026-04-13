@@ -1,134 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="me.jpg" type="image/jpeg">
-    
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "ILay | Web Developer", 
-  "alternateName": "ILay Portfolio",
-  "url": "https://sindibadlhm-source.github.io/Portfolio/",
-  "description": "Professional web development services for global clients."
-}
-</script>
-    <link rel="icon" href="bongoss.jpg" type="image/x-icon">
-    <meta name="description" content="ILay - Professional Web Developer in Morocco. Building high-performance, trilingual websites for global clients.">
-
-<meta name="keywords" content="Web Developer Morocco, Freelance Developer, Trilingual Web Design, Portfolio ILay">
-
-<meta property="og:title" content="ILay | Web Developer Portfolio">
-<meta property="og:description" content="Check out my latest web projects and services.">
-<meta property="og:image" content="me.jpg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0a0a0a">
-    <title>ILay - Professional Web Developer</title>
-    <meta name="google-site-verification" content="ahQefpg9Fa9wa0dSyjXV-kuTibokw_roIQp0bADRDXQ" />
+    <title>ILay Dev | Premium Web Solutions</title>
+    
+    <link rel="icon" href="bongoss.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <section class="hero">
-        <div class="glass-card">
-            <img src="bongoss.jpg" alt="ILay" class="profile-img">
-            <h1>Hi I'm <span class="highlight">ILay</span></h1>
-            <p>I build trilingual high-performance websites for global clients.</p>
-            <div class="cta-buttons">
-                <a href="https://wa.me/212645750778" class="btn-primary">Hire Me (WhatsApp)</a>
+    <nav class="navbar">
+        <div class="logo">ILAY<span>.DEV</span></div>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#contact" class="nav-btn">Hire Me</a>
+        </div>
+    </nav>
+
+    <a href="https://wa.me/212645750778" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <header class="hero reveal">
+        <span class="badge">● Available for Work</span>
+        <h1>Creative <span class="gradient-text">Web Solutions</span></h1>
+        <p>I build high-performance websites that help businesses grow.</p>
+        <a href="#contact" class="btn-primary">Start a Project</a>
+    </header>
+
+    <section class="skills reveal">
+        <h2 class="section-title">My Tech Stack</h2>
+        <div class="grid-container">
+            <div class="glass-tag"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="glass-tag"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="glass-tag"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="glass-tag"><i class="fas fa-rocket"></i> SEO</div>
+        </div>
+    </section>
+
+    <section id="services" class="services reveal">
+        <h2 class="section-title">What I Do</h2>
+        <div class="grid-container cards-grid">
+            <div class="glass-card service-card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Clean, fast, and responsive coding for any device.</p>
+            </div>
+            <div class="glass-card service-card">
+                <i class="fas fa-paint-brush"></i>
+                <h3>UI/UX Design</h3>
+                <p>Beautiful interfaces that keep users engaged.</p>
             </div>
         </div>
     </section>
 
-    <section class="services reveal">
-        <h2 class="section-title">My Services</h2>
-        <div class="services-container">
-            <div class="service-box">
-                <h3>Web Development</h3>
-                <p>High-performance websites built with modern code (HTML, CSS, JS) for a global audience.</p>
-            </div>
-            <div class="service-box">
-                <section class="skills reveal">
-    <h2 class="section-title">My Tech Stack</h2>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <i class="fab fa-html5"></i>
-            <span>HTML5</span>
-        </div>
-        <div class="skill-card">
-            <i class="fab fa-css3-alt"></i>
-            <span>CSS3</span>
-        </div>
-        <div class="skill-card">
-            <i class="fab fa-js"></i>
-            <span>JavaScript</span>
-        </div>
-        <div class="skill-card">
-            <i class="fas fa-search"></i>
-            <span>SEO</span>
-        </div>
-        <div class="skill-card">
-            <i class="fas fa-mobile-alt"></i>
-            <span>Responsive Design</span>
-        </div>
-        <div class="skill-card">
-            <i class="fas fa-code-branch"></i>
-            <span>Git & GitHub</span>
-        </div>
-                <h3>Multi-language SEO</h3>
-                <p>Optimizing your digital presence for Arabic, French, and English speaking markets.</p>
-            </div>
-            <div class="service-box">
-                <section class="skills reveal">
-    <h2 class="section-title">My Tech Stack</h2>
-    <div class="skills-grid">
-        <div class="skill-card"><span>HTML5</span></div>
-        <div class="skill-card"><span>CSS3</span></div>
-        <div class="skill-card"><span>JavaScript</span></div>
-        <div class="skill-card"><span>SEO Optimization</span></div>
-        <div class="skill-card"><span>Responsive Design</span></div>
-                <h3>Digital Solutions</h3>
-                <p>Helping businesses worldwide transition to the digital world with professional tools.</p>
-            </div>
-        </div>
-    </section>
-<section class="contact reveal">
+    <section id="contact" class="contact reveal">
         <h2 class="section-title">Get In Touch</h2>
-        <div class="glass-card contact-form">
-            <form>
+        <div class="glass-card form-container">
+            <form action="#" method="POST">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
-                <button type="submit" class="btn-primary">Send Message</button>
+                <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                <button type="submit" class="btn-primary" style="width: 100%;">Send Message</button>
             </form>
         </div>
     </section>
-    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="top-btn">↑</button>
-                 <footer>
-    <p>&copy; 2026 ILay Dev. All rights reserved.</p>
-    <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="https://wa.me/212645750778">WhatsApp</a>
-    </div>
+
+    <footer>
+        <p>&copy; 2026 ILay Dev. Built in Morocco.</p>
+    </footer>
 
     <script>
-    window.addEventListener('scroll', reveal);
-    function reveal() {
-        var reveals = document.querySelectorAll('.reveal');
-        for (var i = 0; i < reveals.length; i++) {
-            var windowHeight = window.innerHeight;
-            var revealTop = reveals[i].getBoundingClientRect().top;
-            var revealPoint = 150;
-
-            if (revealTop < windowHeight - revealPoint) {
-                reveals[i].classList.add('active');
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                
+                // Triggers when the element is 100px visible
+                if (revealTop < windowHeight - 100) {
+                    reveals[i].classList.add('active');
+                }
             }
         }
-    }
+        // Listen for scrolling
+        window.addEventListener('scroll', reveal);
+        // Run once immediately so the top of the page loads
         reveal();
-</script>
-</footer>
+    </script>
 </body>
 </html>
