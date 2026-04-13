@@ -257,3 +257,19 @@ footer p {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
 }
+/* Find the section that holds your form */
+.contact-section { 
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This is the centering magic */
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px; /* Optional: gives some space above it */
+}
+
+/* Optional: to make the actual "Get In Touch" title center */
+.contact-section h2 {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
