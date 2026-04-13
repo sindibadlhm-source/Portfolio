@@ -185,21 +185,6 @@ h1 span {
                  0 0 20px rgba(0, 212, 255, 0.4);
     letter-spacing: 2px;
 }
-.skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    padding: 20px;
-}
-.skill-card {
-    background: rgba(255, 255, 255, 0.05);
-    padding: 10px 20px;
-    border-radius: 50px;
-    border: 1px solid rgba(0, 212, 255, 0.3);
-    color: #00d4ff;
-    font-weight: bold;
-}
 footer {
     text-align: center;
     padding: 40px 20px;
@@ -226,29 +211,36 @@ footer p {
     color: white;
     text-shadow: 0 0 10px #00d4ff;
 }
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the title and the grid */
+    text-align: center;
+    padding: 50px 20px;
+}
+
 .skills-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    flex-wrap: wrap;       /* Allows cards to wrap to the next line */
+    justify-content: center; /* Centers the cards in the row */
+    gap: 12px;             /* Space between cards */
+    max-width: 100%;       /* Prevents overflow on mobile */
 }
 
 .skill-card {
     background: rgba(255, 255, 255, 0.03);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(0, 212, 255, 0.2);
-    padding: 15px 30px;
-    border-radius: 15px;
+    padding: 12px 20px;
+    border-radius: 12px;
     color: #00d4ff;
     font-weight: 600;
-    transition: 0.4s;
-    cursor: default;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 0.9rem;
+    
+    /* This part is key for mobile: */
+    min-width: 140px;      /* Ensures they don't get too thin */
+    flex: 0 1 auto;        /* Allows them to sit side-by-side if room exists */
 }
 
 .skill-card:hover {
